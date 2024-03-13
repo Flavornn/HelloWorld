@@ -1,10 +1,16 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        double area, radius;
+        double n1, n2, n3, average;
 
-        radius = 33;
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Enter 3 numbers:");
 
-        area = radius * radius * 3.1415;
-        System.out.println("Area is " + area);
+        n1 = userInput.nextDouble();
+        n2 = userInput.nextDouble();
+        n3 = userInput.nextDouble();
+        average = (n1 + n2 + n3) / 3;
+        System.out.println("Average of " + n1 + ", " + n2 + ", " + n3 + " is: " + average);
     }
 }
